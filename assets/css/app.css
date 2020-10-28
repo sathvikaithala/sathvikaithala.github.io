@@ -45,7 +45,7 @@ footer a {
 }
 
 .wave {
-  background: linear-gradient(to left, #2980B9, #1f618d);
+  background: linear-gradient(to left, #5499c7, #1f618d);
   min-height: 350px;
   color: #fff;
   display: flex;
@@ -95,7 +95,7 @@ footer a {
 }
 
 .container-color {
-  background-color: #1f618d;
+  background-color: #2471a3;
 }
 
 .container-dark {
@@ -103,8 +103,8 @@ footer a {
 }
 
 .card-title {
-  margin-top: 50px;
-  color: #1f618d;
+  margin-top: 0px;
+  color: #2471a3;
   text-align: center;
 }
 
@@ -113,17 +113,19 @@ footer a {
 }
 
 .card-icon{
-  color: #1f618d;
+  color: #2471a3;
   font-size: 50px;
 }
 
 .subtitle {
     font-weight: 200;
 }
-.boy {
-    display: block;
+.headshot {
+    transform: translateY(-50px);
+    display: inline-block;
     height: 200px;
-    margin-top: 50px;
+    margin-top: 0px;
+    align-items: center;
 }
 
 .start-project-card {
@@ -171,7 +173,7 @@ footer a {
 	 content: "";
 	 width: 3px;
 	 height: 100%;
-	 background: #1f618d;
+	 background: #2471a3;
 	 left: 50%;
 	 top: 0;
 	 position: absolute;
@@ -187,7 +189,7 @@ footer a {
 	 position: relative;
 }
  #timeline .timeline-item .timeline-icon {
-	 background: #1f618d;
+	 background: #2471a3;
 	 width: 50px;
 	 height: 50px;
 	 position: absolute;
@@ -209,7 +211,7 @@ footer a {
 }
  #timeline .timeline-item .timeline-content h2 {
 	 padding: 15px;
-	 background: #1f618d;
+	 background: #2471a3;
 	 color: #fff;
 	 margin: -20px -20px 0 -20px;
 	 font-weight: 300;
@@ -227,7 +229,7 @@ footer a {
 	 height: 0;
 	 border-top: 7px solid transparent;
 	 border-bottom: 7px solid transparent;
-	 border-left: 7px solid #1f618d;
+	 border-left: 7px solid #2471a3;
 }
  #timeline .timeline-item .timeline-content.right {
 	 float: right;
@@ -237,11 +239,11 @@ footer a {
 	 right: 45%;
 	 left: inherit;
 	 border-left: 0;
-	 border-right: 7px solid #1f618d;
+	 border-right: 7px solid #2471a3;
 }
  .btn {
-	 background-color: #1f618d;
-   border: 2px solid #1f618d;
+	 background-color: #2471a3;
+   border: 2px solid #2471a3;
    color: #fff;
    border-radius: 0;
 
@@ -264,7 +266,7 @@ footer a {
 		 left: 10%;
 		 margin-left: -6px;
 		 border-left: 0;
-		 border-right: 7px solid #1f618d;
+		 border-right: 7px solid #2471a3;
 	}
 	 #timeline .timeline-item .timeline-icon {
 		 left: 0;
@@ -307,7 +309,7 @@ footer a {
   left: 0;
   height: 50px;
   padding: 10px;
-  background: #1f618d;
+  background: #2471a3;
   border: 0;
   border-radius: 0;
 }
