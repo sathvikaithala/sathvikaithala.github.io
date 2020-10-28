@@ -103,7 +103,7 @@ footer a {
 }
 
 .card-title {
-  margin-top: 0px;
+  margin-top: 10px;
   color: #2471a3;
   text-align: center;
 }
@@ -118,6 +118,7 @@ footer a {
 }
 
 .subtitle {
+
     font-weight: 200;
 }
 .headshot {
