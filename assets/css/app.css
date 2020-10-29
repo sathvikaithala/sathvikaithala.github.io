@@ -34,7 +34,7 @@ footer a {
   flex-direction: column;
 }
 
-/* Navbar */
+/* Navbar ---
 
 #mainNav .navbar-nav {
   letter-spacing: 0.025rem;
@@ -48,6 +48,8 @@ footer a {
 #mainNav .navbar-nav li.nav-item a.nav-link:focus {
   color: #fff;
 }
+
+ --- end navbar */
 
 /* splash/blue background element */
 
