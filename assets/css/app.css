@@ -124,7 +124,7 @@ footer a {
 /* Containers */
 
 .info-container {
-  padding: 60px 0;
+  padding: 20px 0;
 }
 
 .info-item {
@@ -242,7 +242,6 @@ footer a {
    border: 2px solid #2471a3;
    color: #fff;
    border-radius: 0;
-
 }
 
  @media screen and (max-width: 768px) {
