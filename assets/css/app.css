@@ -1,5 +1,6 @@
 html, body {
   font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -15,7 +16,7 @@ h1 {
 }
 
 footer {
-  background-color: #17202a;
+  background: linear-gradient(to left, #1f618d, #17202a);
   color: #fff;
   display: flex;
   align-items: flex-start;
@@ -99,7 +100,7 @@ footer a {
 }
 
 .container-dark {
-  background-color: #17202a;
+  background: linear-gradient(to left, #1f618d, #17202a)
 }
 
 .card-title {
