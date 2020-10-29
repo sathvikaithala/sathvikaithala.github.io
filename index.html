@@ -26,10 +26,10 @@
 </head>
 
 <body>
-    <!-- Navbar 
-        - Uncomment after fixing mobile view, scroll view, and push further right.
+    <!--Navbar 
+        - Uncomment after fixing mobile view, scroll view, and push further right. 
 
-    <nav class="navbar navbar-expand-lg fixed-top text-uppercase" id="mainNav">
+    <nav class="navbar navbar-expand-sm fixed-top text-uppercase" id="mainNav">
         <div class="container">
             <button class="navbar-toggler navbar-toggler-right text-uppercase text-white rounded" type="button"
                 data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
@@ -42,14 +42,7 @@
                         <a class="nav-link" href="#aboutme">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#links">Links</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link " href="#portfolio">Portfolio</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#education">Education</a>
-                    </li> 
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
@@ -60,7 +53,7 @@
 
     <!-- Header -->
     <header>
-        <div class="wave">
+        <div class="splash">
             <div class="container header-container">
                 <h3 class="subtitle text-center"> Hi, I'm </h3>
                 <h1 class="name text-center"><b>SATHVIK AITHALA</b></h1>
@@ -69,35 +62,20 @@
 
         </div>
 
-        <div class="wave-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" opacity="1" width="100%" height="80"
-                preserveAspectRatio="none" viewBox="0 0 1600 200">
-                <!-- uncomment the following to replace with wavy structure <path d="M-8,95.3C-8,95.3,189,2,398,2s604,184.7,800,184.7s412-91.4,412-91.4V271H-8V95.3z" />
-                <path
-                    d="M1610,95.3c0,0-216,80-412,80c-98,0-245.8-40.5-395.1-80.9c149.4,46.2,297.1,92.3,395.1,92.3C1394,186.7,1610,95.3,1610,95.3z" /> -->
-            </svg>
-        </div>
     </header>
 
     <!-- Welcome text -->
     <section class="container text-center">
-        <h1 class="title">Welcome to my page!</h1>
+        <h1 class="title"><br>Welcome to my page!</h1>
         <h3 class="subtitle"><br>Stick around to <a class="link" href="#aboutme">get to know me</a>, <br> check out <a class="link " href="#portfolio">my projects</a>, and <a class="link" href="#contact">get in touch</a>. </h3>
+        <br><br><br>
     </section>
 
-
-    <div class="wave-svg-color">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="#2471a3" opacity="1" width="100%" height="80"
-            preserveAspectRatio="none" viewBox="0 0 1600 200">
-            <!-- uncomment the following to replace with wavy structure <path d="M-8,95.3C-8,95.3,189,2,398,2s604,184.7,800,184.7s412-91.4,412-91.4V271H-8V95.3z" />
-            <path
-                d="M1610,95.3c0,0-216,80-412,80c-98,0-245.8-40.5-395.1-80.9c149.4,46.2,297.1,92.3,395.1,92.3C1394,186.7,1610,95.3,1610,95.3z" /> -->
-        </svg>
-    </div>
-
+    <!-- blue bar -->
+    <section class="container-color" id="aboutme"> </section>
+    
     <!-- About Me Section -->
-    <section class="container-color" id="aboutme">
-    </section>
+
     <section class="container">
         <div class="card custom-card">
             <div class="card-body">
@@ -130,11 +108,12 @@
                     <br><br>
                 </p>
             </div>
+            <section class="container-color"> </section> <!-- add blue bar to bottom of card -->
         </div>
     </section>
 
     <!-- Links -->
-    <section class="education-container" id="links">
+    <section class="info-container" id="links">
         <div class="container">
             <hr />
             <h1 class="title">Associated Links
@@ -147,31 +126,31 @@
                 <div class="row text-center">
                     <div class="col">
                         <div class="skill-bar-title">
-                            <a href="https://resume.io/r/44XvNfulQ" title="Want to know more about me? Click here to see my resume." class="link"><i class="fas fa-file fa-3x"></i></a>
+                            <a href="https://resume.io/r/44XvNfulQ" target="_blank" rel="noopener noreferrer" title="Want to know more about me? Click here to see my resume." class="link"><i class="fas fa-file fa-3x"></i></a>
                             <p>Resume</p>
                         </div>
                     </div>
                     <div class="col">
                         <div class="skill-bar-title">
-                            <a href="https://www.avadata.io" title="Check out my Data Analytics Consulting firm, AvaData Solutions, Inc. We specialize in helping small businesses understand, organize, and visualize their data." class="link"><i class="fas fa-globe fa-3x"></i></a>
+                            <a href="https://www.avadata.io" target="_blank" rel="noopener noreferrer" title="Check out my Data Analytics Consulting firm, AvaData Solutions, Inc. We specialize in helping small businesses understand, organize, and visualize their data." class="link"><i class="fas fa-globe fa-3x"></i></a>
                             <p>AvaData Solutions</p>
                         </div>
                     </div>
                     <div class="col">
                         <div class="skill-bar-title">
-                            <a href="https://linkedin.com/in/sathvikaithala" title="Contact me through LinkedIn!" class="link"><i class="fab fa-linkedin fa-3x"></i></a>
+                            <a href="https://linkedin.com/in/sathvikaithala" target="_blank" rel="noopener noreferrer" title="Contact me through LinkedIn!" class="link"><i class="fab fa-linkedin fa-3x"></i></a>
                             <p>LinkedIn</p>
                         </div>
                     </div>
                     <div class="col">
                         <div class="skill-bar-title">
-                            <a href="https://github.com/sathvikaithala" title="Check out my past and current projects on GitHub." class="link"><i class="fab fa-github fa-3x"></i></a>
+                            <a href="https://github.com/sathvikaithala" target="_blank" rel="noopener noreferrer" title="Check out my past and current projects on GitHub." class="link"><i class="fab fa-github fa-3x"></i></a>
                             <p>GitHub</p>
                         </div>
                     </div>
                     <div class="col">
                         <div class="skill-bar-title">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Sathvik+Aithala" title="Here are the four publications I was involved with in my time as a Research Assitant at MD Anderson." class="link"><i class="fas fa-scroll fa-3x"></i></a>
+                            <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Sathvik+Aithala" target="_blank" rel="noopener noreferrer" title="Here are the four publications I was involved with in my time as a Research Assitant at MD Anderson." class="link"><i class="fas fa-scroll fa-3x"></i></a>
                             <p>Publications</p>
                         </div>
                     </div>
@@ -190,7 +169,7 @@
     <section class="container" id="portfolio">
         <hr />
         <h1 class="title">Portfolio</h1>
-        <h3 class="subtitle">Here are a few of my favorite projects.</h3> More can be found at my <a href="https://github.com/sathvikaithala" class="link">GitHub Repository.</a>
+        <h3 class="subtitle">Here are a few of my favorite projects.</h3> More can be found at my <a href="https://github.com/sathvikaithala" target="_blank" rel="noopener noreferrer" class="link">GitHub Repository.</a>
     </section>
 
 
@@ -208,8 +187,8 @@
                         <br><br> This was the final group project in my Boot Camp. The project was designed to showcase the ETL process, our ability to use AWS to create and host a database, extensive machine learning models to try and predict the housing prices, and our ability to visualize and present the information in a dashboard.
                         <br><br> <b>Tools & Skills Used:</b> Tableau, Machine Learning, ETL, Python, SQL, AWS
                     </p>
-                    <a href="https://github.com/sathvikaithala/Final_project" class="btn"><i class="fab fa-github"></i> Code & Write-up</a>
-                    <a href="https://public.tableau.com/profile/sathvik.aithala#!/vizhome/HousingPrices_16030731374470/Dashboard" class="btn"><i class="fas fa-tv"></i> Dashboard</a>
+                    <a href="https://github.com/sathvikaithala/Final_project" target="_blank" rel="noopener noreferrer" class="btn"><i class="fab fa-github"></i> Code & Write-up</a>
+                    <a href="https://public.tableau.com/profile/sathvik.aithala#!/vizhome/HousingPrices_16030731374470/Dashboard" target="_blank" rel="noopener noreferrer" class="btn"><i class="fas fa-tv"></i> Dashboard</a>
                 </div>
             </div>
 
@@ -224,7 +203,7 @@
                         <br> Analyzing various cryptocurrencies that are currently trading. I preprocessed data from CryptoCompare for unsupervised machine learning, performed PCA analysis, predicted clusters, and plotted results. 
                         <br><br> <b>Tools & Skills Used:</b> PCA, SKLearn, Unsupervised Machine Learning
                     </p>
-                    <a href="https://github.com/sathvikaithala/Cryptocurrencies" class="btn"><i class="fab fa-github"></i> Code & Write-up</a>
+                    <a href="https://github.com/sathvikaithala/Cryptocurrencies" target="_blank" rel="noopener noreferrer" class="btn"><i class="fab fa-github"></i> Code & Write-up</a>
                 </div>
             </div>
 
@@ -238,7 +217,7 @@
                         <br> Working through the Extract, Transform, and Load (ETL) process to clean and combine three data large sources, generating an extensive SQL database of movies. 
                         <br><br> <b>Tools & Skills Used:</b> ETL, SQL, Python
                     </p>
-                    <a href="https://github.com/sathvikaithala/movies-etl" class="btn"><i class="fab fa-github"></i> Code & Write-up</a>
+                    <a href="https://github.com/sathvikaithala/movies-etl" target="_blank" rel="noopener noreferrer" class="btn"><i class="fab fa-github"></i> Code & Write-up</a>
 
                 </div>
             </div>
@@ -254,7 +233,7 @@
                         <br> Using JavaScript to visualize the differences between the global earthquakes recorded in the past seven days, including tectonic plate overlays and multiple map views.
                         <br><br> <b>Tools & Skills Used:</b> JavaScript, Leaflet, D3
                     </p>
-                    <a href="https://github.com/sathvikaithala/Mapping_Earthquakes" class="btn"><i class="fab fa-github"></i> Code & Write-up</a>
+                    <a href="https://github.com/sathvikaithala/Mapping_Earthquakes" target="_blank" rel="noopener noreferrer" class="btn"><i class="fab fa-github"></i> Code & Write-up</a>
                 </div>
             </div>
 
@@ -268,22 +247,22 @@
                         <br> Building a travel itinerary for a user based on their weather preferences. In order to accomplish this, I used Google Maps APIs to build a database of cities around the world, including their weather descriptions. 
                         <br><br> <b>Tools & Skills Used:</b> Python, APIs, Mapping
                     </p>
-                    <a href="https://github.com/sathvikaithala/world_weather-analysis" class="btn"><i class="fab fa-github"></i> Code & Write-up</a>
+                    <a href="https://github.com/sathvikaithala/world_weather-analysis" target="_blank" rel="noopener noreferrer" class="btn"><i class="fab fa-github"></i> Code & Write-up</a>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <!-- Education -->
-    <section class="container education-container" id="education">
+    <!-- Education Info -->
+    <section class="container info-container" id="education">
         <hr />
         <h1 class="title">Education </h1>
-        <article class="education-item">
+        <article class="info-item">
             <h3 class="subtitle">The University of California, Berkeley</h3>
             <span class="text-muted">Data Analytics Boot Camp | 2020</span>
         </article>
-        <article class="education-item">
+        <article class="info-item">
             <h3 class="subtitle">The University of Texas at Austin</h3>
             <span class="text-muted">B.S Physics, Radiation Physics and Nuclear Engineering | 2012 - 2016</span>
         </article>
@@ -294,9 +273,9 @@
         <div class="container">
             <h1>Contact Me&nbsp;&nbsp;&nbsp;&nbsp;</h1>
             <h3 class="intro subtitle">
-                <a href="https://linkedin.com/in/sathvikaithala" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/sathvikaithala" class="social-icon"><i class="fab fa-github"></i></a>
-                <a href="mailto:<sathvik.aithala@gmail.com>" class="social-icon"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/sathvikaithala" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/sathvikaithala" target="_blank" rel="noopener noreferrer" title="GitHub" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="mailto:<sathvik.aithala@gmail.com>" target="_blank" rel="noopener noreferrer" title="Email" class="social-icon"><i class="fas fa-envelope"></i></a>
             </h3>
         </div>
     </section>
