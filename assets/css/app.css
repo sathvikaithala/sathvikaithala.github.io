@@ -52,6 +52,12 @@ footer a {
   color: #fff;
 }
 
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+  color:var(--dark);
+  text-decoration: none;
+  transition-duration: 300ms;
+}
+
 #mainNav .navbar-nav li.nav-item a.nav-link:active,
 #mainNav .navbar-nav li.nav-item a.nav-link:focus {
   color: #fff;
