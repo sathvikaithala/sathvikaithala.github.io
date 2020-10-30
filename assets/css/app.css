@@ -99,7 +99,9 @@ footer a {
 
 .card-text {
   line-height: 2;
-  text-justify: auto;
+  text-align: center;
+  padding: 75px;
+  margin-top: -50px;
 }
 
 .card-icon{
