@@ -34,7 +34,7 @@ footer a {
   flex-direction: column;
 }
 
-/* Navbar ---
+/* Navbar --- */
 
 #mainNav .navbar-nav {
   letter-spacing: 0.025rem;
@@ -49,13 +49,12 @@ footer a {
   color: #fff;
 }
 
- --- end navbar */
 
 /* splash/blue background element */
 
 .splash {
   background: linear-gradient(to left, #5499c7, #1f618d);
-  min-height: 350px;
+  min-height: 300px;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -66,12 +65,11 @@ footer a {
 /* About Me card section */
 
 .custom-card {
-  transform: translateY(-75px);
+  transform: translateY(-50px);
   text-align: center;
   width:750px;
   max-width: 90%;
   margin: 0 auto;
-  
 }
 
 .card {
@@ -156,7 +154,7 @@ footer a {
 	 content: '';
 	 display: block;
 	 width: 100%;
-	 clear: both;
+   clear: both;
 }
  
  #timeline {
