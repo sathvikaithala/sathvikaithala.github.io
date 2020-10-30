@@ -1,5 +1,13 @@
 /* Header, footer, and body */
 
+:root {
+  --main: #2471a3; /* used for icons, text, and content within the page. Falls between light and mid colors. */
+  --light: #5499c7; /* used for the lighter side of the color banners */
+  --mid: #1f618d; /* used for the darker side of the color banners, or the lighter side of the footer banner */
+  --dark: #17202a; /* used for the darker side of the footer banner, and the hover-color for links */
+}
+
+
 html, body {
   font-family: 'Lato', sans-serif;
   scroll-behavior: smooth;
@@ -18,7 +26,7 @@ h1 {
 }
 
 footer {
-  background: linear-gradient(to left, #1f618d, #17202a);
+  background: linear-gradient(to left, var(--mid), var(--dark));
   color: #fff;
   display: flex;
   align-items: flex-start;
@@ -53,7 +61,7 @@ footer a {
 /* splash/blue background element */
 
 .splash {
-  background: linear-gradient(to left, #5499c7, #1f618d);
+  background: linear-gradient(to left, var(--light), var(--mid));
   min-height: 300px;
   color: #fff;
   display: flex;
@@ -79,7 +87,7 @@ footer a {
 
 .card-title {
   margin-top: 10px;
-  color: #2471a3;
+  color: var(--main);
   text-align: center;
 }
 
@@ -89,7 +97,7 @@ footer a {
 }
 
 .card-icon{
-  color: #2471a3;
+  color: var(--main);
   font-size: 50px;
 }
 
@@ -136,11 +144,11 @@ footer a {
 }
 
 .container-color {
-  background: linear-gradient(to left, #5499c7, #1f618d);
+  background: linear-gradient(to left, var(--light), var(--mid));
 }
 
 .container-dark {
-  background: linear-gradient(to left, #1f618d, #17202a)
+  background: linear-gradient(to left, var(--mid), var(--dark))
 }
 
 /* Portfolio section */
@@ -168,7 +176,7 @@ footer a {
 	 content: "";
 	 width: 3px;
 	 height: 100%;
-	 background: #2471a3;
+	 background: var(--main);
 	 left: 50%;
 	 top: 0;
 	 position: absolute;
@@ -184,7 +192,7 @@ footer a {
 	 position: relative;
 }
  #timeline .timeline-item .timeline-icon {
-	 background: #2471a3;
+	 background: var(--main);
 	 width: 50px;
 	 height: 50px;
 	 position: absolute;
@@ -206,7 +214,7 @@ footer a {
 }
  #timeline .timeline-item .timeline-content h2 {
 	 padding: 15px;
-	 background: #2471a3;
+	 background: var(--main);
 	 color: #fff;
 	 margin: -20px -20px 0 -20px;
 	 font-weight: 300;
@@ -224,7 +232,7 @@ footer a {
 	 height: 0;
 	 border-top: 7px solid transparent;
 	 border-bottom: 7px solid transparent;
-	 border-left: 7px solid #2471a3;
+	 border-left: 7px solid var(--main);
 }
  #timeline .timeline-item .timeline-content.right {
 	 float: right;
@@ -234,11 +242,11 @@ footer a {
 	 right: 45%;
 	 left: inherit;
 	 border-left: 0;
-	 border-right: 7px solid #2471a3;
+	 border-right: 7px solid var(--main);
 }
  .btn {
-	 background-color: #2471a3;
-   border: 2px solid #2471a3;
+	 background-color: var(--main);
+   border: 2px solid var(--main);
    color: #fff;
    border-radius: 0;
 }
@@ -260,7 +268,7 @@ footer a {
 		 left: 10%;
 		 margin-left: -6px;
 		 border-left: 0;
-		 border-right: 7px solid #2471a3;
+		 border-right: 7px solid var(--main);
 	}
 	 #timeline .timeline-item .timeline-icon {
 		 left: 0;
@@ -276,17 +284,17 @@ footer a {
 }
 
 .social-icon:hover {
-  color:#2471a3;
+  color:var(--main);
   transition-duration: 300ms;
 }
 
 .link {
-  color:#2471a3;
+  color:var(--main);
   transition-duration: 300ms;
 }
 
 .link:hover {
-  color:#17202a;
+  color:var(--dark);
   text-decoration: none;
   transition-duration: 300ms;
 }
@@ -327,7 +335,7 @@ footer a {
   left: 0;
   height: 50px;
   padding: 10px;
-  background: #2471a3;
+  background: var(--main);
   border: 0;
   border-radius: 0;
 }
