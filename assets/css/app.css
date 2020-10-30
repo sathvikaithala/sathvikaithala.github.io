@@ -62,7 +62,7 @@ footer a {
 
 .splash {
   background: linear-gradient(to left, var(--light), var(--mid));
-  min-height: 300px;
+  min-height: 325px;
   color: #fff;
   display: flex;
   flex-direction: column;
