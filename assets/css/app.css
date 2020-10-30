@@ -100,7 +100,7 @@ footer a {
 .card-text {
   line-height: 2;
   text-align: center;
-  padding: 75px;
+  padding: 50px;
   margin-top: -50px;
 }
 
@@ -306,6 +306,8 @@ footer a {
   text-decoration: none;
   transition-duration: 300ms;
 }
+
+
 
 /* Modal */
 
