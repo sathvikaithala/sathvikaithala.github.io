@@ -5,7 +5,6 @@
   --light: #5499c7; /* used for the lighter side of the color banners */
   --mid: #1a5276; /* used for the darker side of the color banners, or the lighter side of the footer banner */
   --dark: #17202a; /* used for the darker side of the footer banner, and the hover-color for links */
-  --fade: #eaf2f8; /* used for the bottom of the splash for the fade */
 }
 
 
@@ -383,5 +382,17 @@ footer a {
 
   .card-body {
     padding:12px;
+  }
+
+  .title {
+    font-size:2.25rem;
+  }
+
+  .subtitle {
+    font-size:1.5rem;
+  }
+
+  .name {
+    font-size:3rem;
   }
 }
