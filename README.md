@@ -52,6 +52,6 @@ In the future, I plan on building a separate page for these projects to be house
 
 ## Conclusion
 
-In the few days I spent working on this website, I have learned a lot about web development, design, code etiquette, and troubleshooting.
+In the few days I spent working on this website, I have learned a lot about web development, design, code etiquette, and troubleshooting. I've also gained a new-found sense of confidence in my abilities to tackle projects that I designed on my own.
 
 <i>Thanks for joining me on this journey, as I learn to use my new skills and work on some interesting projects!</i>
