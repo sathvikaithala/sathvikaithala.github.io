@@ -31,10 +31,6 @@ footer {
   display: flex;
   align-items: flex-start;
 }
-/*
-footer a {
-  color: #fff;
-} */
 
 .header-container {
   display: flex;
@@ -52,17 +48,6 @@ footer a {
   color: #fff;
 }
 
-/*
-#mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color:var(--dark);
-  text-decoration: none;
-  transition-duration: 300ms;
-}
-
-#mainNav .navbar-nav li.nav-item a.nav-link:active,
-#mainNav .navbar-nav li.nav-item a.nav-link:focus {
-  color: #fff;
-} */
 
 #mainNav {
   background: linear-gradient(to left,var(--light), var(--mid));
@@ -118,19 +103,6 @@ footer a {
     margin-top: 0px;
     align-items: center;
 }
-/*
-.start-project-card {
-    min-height: 200px;
-    width: 100%;
-}
-
-.card-flex{
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-}
-*/
 
 .skill-container{
   padding: 30px;
@@ -290,11 +262,6 @@ footer a {
   font-size: 36px;
   margin-right: 40px;
 }
-/*
-.social-icon:hover {
-  color:var(--main);
-  transition-duration: 300ms;
-} */
 
 .link {
   color:var(--main);
@@ -306,77 +273,6 @@ footer a {
   text-decoration: none;
   transition-duration: 300ms;
 }
-
-
-
-/* Modal 
-
-.modal {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-}
-
-.modal-dialog {
-  position: fixed;
-  margin: 0;
-  min-width: 100%;
-  height: 100%;
-  padding: 0;
-}
-
-.modal-content {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: 0;
-  box-shadow: none;
-}
-
-.modal-header {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 50px;
-  padding: 10px;
-  background: var(--main);
-  border: 0;
-  border-radius: 0;
-}
-
-.modal-title {
-  font-weight: 300;
-  font-size: 2em;
-  color: #fff;
-  line-height: 30px;
-}
-
-.modal-body {
-  position: absolute;
-  top: 50px;
-  bottom: 60px;
-  width: 100%;
-  font-weight: 300;
-  overflow: auto;
-}
-
-.modal-footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 60px;
-  padding: 10px;
-  background: #f1f3f5;
-}
-
-*/
 
 @media screen and (max-width:480px) {
   .card-text {
