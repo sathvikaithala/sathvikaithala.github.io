@@ -44,7 +44,11 @@ While the template included "About Me", "Porfolio", "Education", and "Contact" s
 
 After completing the initial website design, I knew there were a lot of ways I could increase efficiency. I also found that my website needed to be optimized for mobile devices, as a lot of the text was too large, and the elements did not flow together very well. 
 
-- <b>Optimization:</b> I utilized [web.dev](web.dev) to see how my website was performing. In the website audit, I was dinged points on Performance, Best Practices, and SEO Optimization on both Desktop and Mobile views. Here are some changes I implemented to improve those scores:
+- <b>Optimization:</b> I utilized [web.dev](web.dev) to see how my website was performing. In the website audit, I was dinged points on Performance, Best Practices, and SEO Optimization on both Desktop and Mobile views. 
+
+![web.dev Results](assets/images/webdevinitial.png)
+
+Here are some changes I implemented to improve those scores:
   - Used `@media` CSS elements to customize text and padding sizes to look better on mobile devices. 
   - Enforced HTTPS.
   - Used Lighthouse to pinpoint unused CSS code and remove it. Much of this excess code was leftover from the template I used.
