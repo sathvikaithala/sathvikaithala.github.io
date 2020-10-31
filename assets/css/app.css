@@ -13,6 +13,17 @@ html, body {
   scroll-behavior: smooth;
 }
 
+
+.splash { /* splash/blue background element */
+  background: linear-gradient(to left,var(--light), var(--mid));
+  min-height: 325px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 h1 {
   font-size:3em;
   font-family: 'Roboto Condensed', sans-serif;
@@ -54,17 +65,7 @@ footer {
 }
 
 
-/* splash/blue background element */
 
-.splash {
-  background: linear-gradient(to left,var(--light), var(--mid));
-  min-height: 325px;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
 /* About Me card section */
 
