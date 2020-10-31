@@ -64,9 +64,6 @@ footer {
   background: linear-gradient(to left,var(--light), var(--mid));
 }
 
-
-
-
 /* About Me card section */
 
 .custom-card {
@@ -100,7 +97,6 @@ footer {
 .headshot {
     transform: translateY(-50px);
     display: inline-block;
-    height: 200px;
     margin-top: 0px;
     align-items: center;
 }
