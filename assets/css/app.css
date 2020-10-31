@@ -2,9 +2,10 @@
 
 :root {
   --main: #2471a3; /* used for icons, text, and content within the page. Falls between light and mid colors. */
-  --light: #7fb3d5; /* used for the lighter side of the color banners */
+  --light: #5499c7; /* used for the lighter side of the color banners */
   --mid: #1a5276; /* used for the darker side of the color banners, or the lighter side of the footer banner */
   --dark: #17202a; /* used for the darker side of the footer banner, and the hover-color for links */
+  --fade: #eaf2f8; /* used for the bottom of the splash for the fade */
 }
 
 
@@ -64,14 +65,14 @@ footer a {
 }
 
 #mainNav {
-  background: linear-gradient(to left, var(--light), var(--mid));
+  background: linear-gradient(to left,var(--light), var(--mid));
 }
 
 
 /* splash/blue background element */
 
 .splash {
-  background: linear-gradient(to left, var(--light), var(--mid));
+  background: linear-gradient(to left,var(--light), var(--mid));
   min-height: 325px;
   color: #fff;
   display: flex;
@@ -105,11 +106,6 @@ footer a {
   text-align: center;
   padding: 30px;
   margin-top: -20px;
-}
-
-.card-icon{
-  color: var(--main);
-  font-size: 50px;
 }
 
 .subtitle {
@@ -159,7 +155,7 @@ footer a {
 }
 
 .container-dark {
-  background: linear-gradient(to left, var(--mid), var(--dark))
+  background: linear-gradient(to left , var(--mid), var(--dark))
 }
 
 /* Portfolio section */
