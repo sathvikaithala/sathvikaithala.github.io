@@ -10,7 +10,8 @@ After successfully completing my Data Analytics Boot Camp, I wanted to build a w
   1) Allow me to practice some skills I learned in the class (HTML and CSS) outside of the classroom setting.
   2) Showcase the work I've put in both in and out of the class in an easy-to-share way.
   
-  
+---
+
 ## The Initial Build
 
 I started this project by using a template provided to me through the Boot Camp. Since the course only focused on HTML and CSS for two weeks, I was apprehensive of my ability to put something together without the guided instruction we had received in the course.
@@ -37,6 +38,7 @@ While the template included "About Me", "Porfolio", "Education", and "Contact" s
   - I hosted the website using GitHub pages, which uses this repository to house all the necessary files.
   - GitHub Pages sets your website name as `<GitHub username>.github.io` as default, so I purchased the `sathvikaithala.com` domain from NameCheap and changed the DNS settings to redirect the GitHub page to that web address.
   
+---
 
 ## Updates, Improvements, and Lessons Learned Along the Way
 
@@ -44,11 +46,18 @@ After completing the initial website design, I knew there were a lot of ways I c
 
 - <b>Optimization:</b> I utilized [web.dev](web.dev) to see how my website was performing. In the website audit, I was dinged points on Performance, Best Practices, and SEO Optimization on both Desktop and Mobile views. Here are some changes I implemented to improve those scores:
   - Used `@media` CSS elements to customize text and padding sizes to look better on mobile devices. 
+  - Enforced HTTPS.
+  - Used Lighthouse to pinpoint unused CSS code and remove it. Much of this excess code was leftover from the template I used.
+  - Added `meta` tags to include a website description, favicon, social media share image, and added keywords to help with SEO.
+  - Defined image size by setting `width` and `height` elements.
 
-![Website performance results from Lighthouse](assets/images/lighthouse.png)
 
 After many small changes and a lot of self-education, I'm happy with the results!
 
+
+![Website performance results from Lighthouse](assets/images/lighthouse.png)
+
+---
 
 ## Future Plans
 
@@ -56,6 +65,7 @@ As I progress in my career as a data analyst, I plan on taking on more projects 
 
 In the future, I plan on building a separate page for these projects to be housed, rather than just the select few I've showcased currently. This should make the Home page a bit cleaner, while allowing me to talk about my projects more in depth without cluttering up the site.
 
+---
 
 ## Conclusion
 
