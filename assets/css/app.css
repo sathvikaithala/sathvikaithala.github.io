@@ -63,6 +63,10 @@ footer a {
   color: #fff;
 }
 
+#mainNav {
+  background: linear-gradient(to left, var(--light), var(--mid));
+}
+
 
 /* splash/blue background element */
 
