@@ -27,16 +27,23 @@ While the template included "About Me", "Porfolio", "Education", and "Contact" s
   - Changing most of the CSS elements to better match my naming scheme and website layout. I also changed or removed a lot of the code from the template that served no purpose, or could be written in a more efficient manner.
   - Fixed padding, spacing, and fonts to make the page more visibly appealing.
   - Using Font Awesome to personalize the icons used for my links and projects.
-  - Customizing hyperlink interactions, like link color, hover color, removing underlines, and making the pages open in a separate tab rather than redirecting the current tab.
+  - Customizing hyperlink interactions, like link color, hover color, removing underlines, and making the pages open in a separate tab rather than redirecting the current tab. Also implemented smooth scrolling and a transition of colors when links are hovered over.
   
 - <b>Restructuring:</b> Some major changes to the format, intended to practice new skills as well as improve website flow.  
   - Creating a completely separate Contacts page.
   - Adding a navigation bar to switch between the Home page and the Contacts page.
   
+- <b>Hosting and Domain Name:</b>
+  - I hosted the website using GitHub pages, which uses this repository to house all the necessary files.
+  - GitHub Pages sets your website name as `<GitHub username>.github.io` as default, so I purchased the `sathvikaithala.com` domain from NameCheap and changed the DNS settings to redirect the GitHub page to that web address.
+  
 
 ## Updates, Improvements, and Lessons Learned Along the Way
 
 After completing the initial website design, I knew there were a lot of ways I could increase efficiency. I also found that my website needed to be optimized for mobile devices, as a lot of the text was too large, and the elements did not flow together very well. 
+
+- <b>Optimization:</b> I utilized [web.dev](web.dev) to see how my website was performing. In the website audit, I was dinged points on Performance, Best Practices, and SEO Optimization on both Desktop and Mobile views. Here are some changes I implemented to improve those scores:
+  - Used `@media` CSS elements to customize text and padding sizes to look better on mobile devices. 
 
 ![Website performance results from Lighthouse](assets/images/lighthouse.png)
 
