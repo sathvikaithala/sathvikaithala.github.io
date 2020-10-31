@@ -2,8 +2,8 @@
 
 :root {
   --main: #2471a3; /* used for icons, text, and content within the page. Falls between light and mid colors. */
-  --light: #5499c7; /* used for the lighter side of the color banners */
-  --mid: #1f618d; /* used for the darker side of the color banners, or the lighter side of the footer banner */
+  --light: #7fb3d5; /* used for the lighter side of the color banners */
+  --mid: #1a5276; /* used for the darker side of the color banners, or the lighter side of the footer banner */
   --dark: #17202a; /* used for the darker side of the footer banner, and the hover-color for links */
 }
 
@@ -83,7 +83,6 @@ footer a {
 /* About Me card section */
 
 .custom-card {
-  transform: translateY(-50px);
   text-align: center;
   width:750px;
   max-width: 90%;
@@ -96,7 +95,7 @@ footer a {
 }
 
 .card-title {
-  margin-top: 10px;
+  margin-top: -5px;
   color: var(--main);
   text-align: center;
 }
@@ -151,7 +150,7 @@ footer a {
 }
 
 .container-color, .container-dark {
-  padding: 80px 0;
+  padding: 60px 0;
   color: #fff;
 }
 
