@@ -264,8 +264,8 @@ footer {
 }
 
 img.resize {
-  max-width:55%;
-  max-height:55%;
+  max-width:75%;
+  max-height:75%;
   position: relative;
   overflow: hidden;
 }
