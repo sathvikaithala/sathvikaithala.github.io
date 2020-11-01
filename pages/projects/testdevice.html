@@ -86,7 +86,7 @@
                     <li><b>Home Page</b><ul> This page provides a quick glance at testing operations and results over a filterable time frame.<br>The goal was to allow a user to quikcly spot anomalies in their testing process.</ul></li>
                     <li><b>Test Data Exploration Page</b><ul>This page consists of the entirety of the test results recorded by the manufacturer.<br>A user can use many different filters to find groups of similar devices. The results are color coded to allow for easy viewing.<br>The Device Serial Number (DSN), device type, test name, and test results are all listed.</bt></ul></li>
                     <li><b>Device Test History Page</b><ul>This page allows a user to keep track of the different stages of manufacturing that a device went through.<br>For example, if you selected a DSA2 device, you would see the serial numbers and test results for the previous stages (DSA1, PCBA, and DIE) along with the results from it's DSA2 tests.</ul></li>
-                    <li><b>Parametric Test Results Page</b><ul>Enter text</ul></li>
+                    <li><b>Parametric Test Results Page</b><ul>This page is designed to allow the user to see the distribution of test values for each test type. The user selects a device type, test, and filters to a desired date range.</ul></li>
                     <li><b>Printable Test Report Page</b><ul>This page allows the user to select a device and get it's full test history in a printable format.<br>The intent of this page was to allow for the user to easily share the test results of a problematic device with the rest of the organization.</bt></ul></li>
                 
             </p>
@@ -112,7 +112,11 @@
         <div class="container">
             <h2>Lessons Learned</h2>
             <p>
-                <br> lorem ipsum etc etc
+                <br>In designing this project, we went through a few iterations of database design to come up with a structure that would be scalable for additional devices, device types, testing centers, employee names, and test types.
+                <br><br>Once we had come up with the final database strucutre, we wrote a Python script that would generate random data for 200 different devices. We then loaded the data into our SQL database and imported it into PowerBI using SQLite.
+                <br><br>This ETL process will continue to be used for samples we provide to potential clients in the future. 
+                        Once we understand what a client is looking for in a dashboard, we can design and create our own fake data to showcase our strengths and capabilities without using any sensitive or proprietary data. 
+                        This allows us to minimize risk, while still being able to present our services in a way that is relevant to the client.
             </p>
         </div>
     </section>
