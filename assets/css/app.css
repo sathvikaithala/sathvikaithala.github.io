@@ -49,6 +49,14 @@ footer {
   flex-direction: column;
 }
 
+.dashboard {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+
 /* Navbar --- */
 
 #mainNav .navbar-nav {
@@ -106,6 +114,9 @@ footer {
 }
 
 /* Containers */
+.project-container {
+  padding: 20px 0;
+} 
 
 .info-container {
   padding: 20px 0;
@@ -251,12 +262,13 @@ footer {
 		 left: 0;
 	}
 }
-.dashboard {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+
+img.resize {
+  max-width:50%;
+  max-height:50%;
 }
+
+
 .responsive-iframe {
   position: absolute;
   top: 0;
@@ -307,4 +319,5 @@ footer {
   .name {
     font-size:3rem;
   }
+
 }

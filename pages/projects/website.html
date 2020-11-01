@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+    <!-- Custom styles for this template -->
+    <link href="../../assets/css/app.css" rel="stylesheet" />
+
+    <!-- Title -->
+    <title>Projects | Portfolio Website | Sathvik Aithala</title>
+    <link rel="icon" href="../../assets/images/favicon-32x32.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm text-uppercase" id="mainNav">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right text-uppercase text-white rounded" type="button"
+                data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Home</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="../blog.html">Blog</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+
+    <!-- Header -->
+    <header>
+        <div class="splash">
+            <div class="container header-container">
+                <h3 class="subtitle text-center">Building My</h3>
+                <h1 class="name text-center"><b>PORTFOLIO WEBSITE</b></h1>
+                <h3 class="subtitle text-center">HTML & CSS</h3>
+
+            </div>
+
+        </div>
+
+    </header>
+    <br>
+    <hr width="90%"/>
+
+    <!-- Writeup -->
+    <section class="project-container">
+        <div class="container">
+            <h2 id="description">Project Description</h2>
+                <br><p>After successfully completing my Data Analytics Boot Camp, I wanted to build a website that would accomplish two things: 
+                    <ul>1) Allow me to practice some skills I learned in the class (HTML and CSS) outside of the classroom setting.</ul>
+                    <ul>2) Showcase the work I've put in both in and out of the class in an easy-to-share way.</ul>
+                </p><br>
+            <hr width="90%"/>
+
+            <h2 id="initial">The Initial Build</h2>
+                <br><p>I started this project by using a template provided to me through the Boot Camp. Since the course only focused on HTML and CSS for two weeks, I was apprehensive of my ability to put something together without the guided instruction we had received in the course.</p>
+                <p>While the template included &quot;About Me&quot;, &quot;Porfolio&quot;, &quot;Education&quot;, and &quot;Contact&quot; sections, there were a lot of extraneous CSS elements and lines of code in the HTML file. In my desire to eventually revamp the whole website, I broke down my project into a few goals:</p>
+                <ul>
+                <li><b>Easy Wins:</b> Changes I would be able to implement quickly and with only the information provided to us through the course.</li>
+                    <ol><li>Updating the code with my own content, namely my photo and links.</li>
+                    <li>Updating the color scheme.</li>
+                    <li><p>Filling out information in place of the template's &quot;lorem ipsum&quot; text.</p></li></ol>
+                <li><b>Incremental Improvements:</b> Making subtle changes that focus on code efficiency and cleanliness, but don't have much of an impact on the webpage as seen by someone visiting the site.</li>
+                    <ol><li>Using <code>:root</code> to tidy up the color scheme. Rather than having hex codes interspersed throughout the CSS file, this little trick allowed me to make changes in just one place. An added benefit of this is that it makes replicating this template for future websites much easier. If I decide to change from a blue theme to a different color, this makes it possible with very little effort.</li>
+                    <li>Changing most of the CSS elements to better match my naming scheme and website layout. I also changed or removed a lot of the code from the template that served no purpose, or could be written in a more efficient manner.</li>
+                    <li>Fixed padding, spacing, and fonts to make the page more visibly appealing.</li>
+                    <li>Using Font Awesome to personalize the icons used for my links and projects.</li>
+                    <li><p>Customizing hyperlink interactions, like link color, hover color, removing underlines, and making the pages open in a separate tab rather than redirecting the current tab. Also implemented smooth scrolling and a transition of colors when links are hovered over.</p></li></ol>
+                <li><b>Restructuring:</b> Some major changes to the format, intended to practice new skills as well as improve website flow.<br /></li>
+                    <ol><li>Creating a completely separate Contacts page.</li>
+                    <li><p>Adding a navigation bar to switch between the Home page and the Contacts page.</p></li></ol>
+                <li><b>Hosting and Domain Name:</b></li>
+                    <ol><li>I hosted the website using GitHub pages, which uses this repository to house all the necessary files.</li>
+                    <li><p>GitHub Pages sets your website name as <code>&lt;GitHub username&gt;.github.io</code> as default, so I purchased the <code>sathvikaithala.com</code> domain from NameCheap and changed the DNS settings to redirect the GitHub page to that web address.</p></li></ol><br>
+                </ul>
+           
+            <hr width="90%"/>
+            
+            <h2 id="updates">Updates, Improvements, and Lessons Learned Along the Way</h2>
+                <br><p>After completing the initial website design, I knew there were a lot of ways I could increase efficiency. I also found that my website needed to be optimized for mobile devices, as a lot of the text was too large, and the elements did not flow together very well.</p>
+                <b>Optimization:</b> I utilized <a href="web.dev">web.dev</a> to see how my website was performing. In the website audit, I was dinged points on Performance, Best Practices, and SEO Optimization on both Desktop and Mobile views.<br><br>
+            
+                <div class="figure text-center">
+                    <img class="resize" src="../../assets/images/projects/website/webdevinitial.png" alt="web.dev Results" /><br>
+                </div>
+            
+            <p><br>
+                Here are some changes I implemented to improve those scores: 
+                <li>Used <code>@media</code> CSS elements to customize text and padding sizes to look better on mobile devices.</li>
+                <li>Enforced HTTPS. - Used Lighthouse to pinpoint unused CSS code and remove it. Much of this excess code was leftover from the template I used.</li>
+                <li>Added <code>meta</code> tags to include a website description, favicon, social media share image, and added keywords to help with SEO.</li>
+                <li>Defined image size by setting <code>width</code> and <code>height</code> elements.
+            </p></li><br>
+            
+            <p><i>After many small changes and a lot of self-education, I'm happy with the results!</i></p><br>
+            
+                <div class="figure text-center">
+                    <img class="resize" src="../../assets/images/projects/website/lighthouse.png" alt="Website performance results from Lighthouse" /><br>
+                </div>
+            
+            <hr width="90%"/>
+            
+            <h2 id="future">Future Plans</h2>
+                <p>As I progress in my career as a data analyst, I plan on taking on more projects to practice my skills and showcase my abilities.</p>
+                <p>In the future, I plan on building a separate page for these projects to be housed, rather than just the select few I've showcased currently. This should make the Home page a bit cleaner, while allowing me to talk about my projects more in depth without cluttering up the site.</p><br>
+            
+                <hr width="90%"/>
+            
+            <h2 id="conclusion">Conclusion</h2>
+                <p>In the few days I spent working on this website, I have learned a lot about web development, design, code etiquette, and troubleshooting. I've also gained a new-found sense of confidence in my abilities to tackle projects that I designed on my own.</p>
+                <p><i>Thanks for joining me on this journey, as I learn to use my new skills and work on some interesting projects!</i></p><br>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="container-dark text-center" id="contact">
+        <div class="container">
+            <h1>Contact Me&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+            <h3 class="intro subtitle">
+                <a href="https://linkedin.com/in/sathvikaithala" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/sathvikaithala" target="_blank" rel="noopener noreferrer" title="GitHub" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="mailto:<sathvik.aithala@gmail.com>" target="_blank" rel="noopener noreferrer" title="Email" class="social-icon"><i class="fas fa-envelope"></i></a>
+            </h3>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            |&nbsp;&nbsp;&nbsp;Built by Sathvik Aithala &copy; 2020&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        
+    </footer>
+
+    <!-- References -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="../../assets/js/app.js"></script>
+</body>
+
+</html>
