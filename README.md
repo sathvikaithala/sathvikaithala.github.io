@@ -69,7 +69,7 @@ As I progress in my career as a data analyst, I plan on taking on more projects 
 
 In the future, I plan on building a separate Blog page for these projects to be housed, rather than just the select few I've showcased currently. This should make the Home page a bit cleaner, while allowing me to talk about my projects more in depth without cluttering up the site.
 
-In order to organize this effort, I came up with the following folder structure.
+In order to organize this effort, I came up with the following folder structure using LucidChart.
 
 ![Folder Structure](assets/images/projects/website/websitestructure.png)
 
