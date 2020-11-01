@@ -46,7 +46,7 @@ After completing the initial website design, I knew there were a lot of ways I c
 
 - <b>Optimization:</b> I utilized [web.dev](web.dev) to see how my website was performing. In the website audit, I was dinged points on Performance, Best Practices, and SEO Optimization on both Desktop and Mobile views. 
 
-![web.dev Results](assets/images/webdevinitial.png)
+![web.dev Results](assets/images/projects/website/webdevinitial.png)
 
 Here are some changes I implemented to improve those scores:
   - Used `@media` CSS elements to customize text and padding sizes to look better on mobile devices. 
@@ -59,7 +59,7 @@ Here are some changes I implemented to improve those scores:
 After many small changes and a lot of self-education, I'm happy with the results!
 
 
-![Website performance results from Lighthouse](assets/images/lighthouse.png)
+![Website performance results from Lighthouse](assets/images/projects/website/lighthouse.png)
 
 ---
 
