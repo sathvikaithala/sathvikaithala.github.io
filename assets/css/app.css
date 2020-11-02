@@ -78,7 +78,15 @@ footer {
 .custom-card {
   text-align: center;
   width:750px;
-  max-width: 90%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.custom-card-nb {
+  text-align: center;
+  width:750px;
+  max-width: 100%;
+  height:750px;
   margin: 0 auto;
 }
 
@@ -282,6 +290,17 @@ img.resize {
   height: 100%;
 }
 
+.responsive-iframe-nb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 90%;
+  height: 90%;
+
+}
+
 /* social icon and link/hover features */
 
 .social-icon {
@@ -402,7 +421,6 @@ img.resize {
   font-weight:300;
   margin:20px 0 0 0;
   line-height: 25px;
-/*   opacity:0; */
   transform: translateX(-200px);
   transition-delay: 0.2s;
 }
@@ -431,19 +449,6 @@ img.resize {
 {
   opacity:1;
   transform:translateY(0px);
-}
-
-.dots span:nth-child(1)
-{
-   transition-delay: 0.05s;
-}
-.dots span:nth-child(2)
-{
-   transition-delay: 0.1s;
-}
-.dots span:nth-child(3)
-{
-   transition-delay: 0.15s;
 }
 
 
