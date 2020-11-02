@@ -463,5 +463,6 @@ img.resize {
     max-width: 90%;
     max-height: 90%;
     margin:10px;
+    justify-content: center;
   }
 }
