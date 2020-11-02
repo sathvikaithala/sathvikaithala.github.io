@@ -1,6 +1,6 @@
 # Professional Portfolio
 
-This repository houses the code for my professional portfolio website, [sathvikaithala.com](https://sathvikaithala.com). This writeup can also be found on my [blog](https://sathvikaithala.com/pages/blog/website.html).
+This repository houses the code for my professional portfolio website, [sathvikaithala.com](https://sathvikaithala.com). This writeup can also be found on my [blog](https://sathvikaithala.com/pages/projects/website.html).
 
 ---
 
