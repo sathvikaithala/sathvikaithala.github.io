@@ -22,7 +22,7 @@
     <link href="../../assets/css/app.css" rel="stylesheet" />
 
     <!-- Title -->
-    <title>Projects | <!--Insert Project Name Here --> | Sathvik Aithala</title>
+    <title>Projects | Analyzing The Weather | Sathvik Aithala</title>
     <link rel="icon" href="../../assets/images/favicon-32x32.png" type="image/png">
 </head>
 
@@ -56,9 +56,9 @@
     <header>
         <div class="splash">
             <div class="container header-container">
-                <h3 class="subtitle text-center">Enter Text</h3>
-                <h1 class="name text-center"><b>Project Name</b></h1>
-                <h3 class="subtitle text-center">Enter Text</h3>
+                <h3 class="subtitle text-center">Analyzing The</h3>
+                <h1 class="name text-center"><b>WEATHER</b></h1>
+                <h3 class="subtitle text-center">Python, APIs, Mapping</h3>
 
             </div>
 
@@ -66,42 +66,62 @@
 
     </header>
     <br>
+    <div class="container text-center"><a href="https://github.com/sathvikaithala/world_weather-analysis" target="_blank" rel="noopener noreferrer" class="btn"><i class="fab fa-github"></i> GitHub Repository</a></div>
     <hr width="90%"/>
 
     <!-- Writeup -->
     <section class="info-container">
         <div class="container">
-            <h2>Background & Overview</h2>
-            <p>
-                <br> Enter Text Here
+
+            <h2>Overview and Background:</h2><br>
+            <p>Utilized Google Maps API data to generage a travel itinerary based on weather preferences. 
                 
-            </p>
-        </div>
-    </section>
-
-    <hr width="90%"/>
-
-    <!-- Dashboard Embed -->
-    <div class="container"><h2>Enter Text for Images/Dashboard</h2><br></div>
-    <section class="card custom-card" id="links">
-        <div class="container text-center">
-            <br><br><h3 class="card-title">Images/Dashboard</h3><br>
-
-            <!-- Copy Dashboard Embed Link Here -->
-    <br><br>
-    </section> <!-- end links section -->
-
-    <hr width="90%"/>
-
-    <!-- Writeup Continued -->
-    <section class="info-container">
-        <div class="container">
-            <h2>Enter Text</h2>
+                <br><br><i>This project was broken up into three parts:</i></p>
+            <b>Part 1: Get the Weather Description and Amount of Precipitation for Each City</b>
+            <p>Used OpenWeatherMap.com API data to generate a list of random cities and extract weather data. The data was exported to a CSV file that would later be used to determine cities that we could visit on vacation.</p>
+            <br>
+            <b>Part 2: Have Customers Narrow Their Travel Searches Based on Temperature and Precipitation</b>
+            <p>In order to ensure that a customer is able to plan a vacation that is ideal for their preferred weather conditions, prompts were added to request information from the customer. These inputs were as follows: 
+                <li>The temperature range they would like to stay within.</li>
+                <li>Whether they minded rain or snow during their trip.</li></p>
+            <p><i>At the time of the original analysis, there were 72 cities with rainfall, and 0 with snowfall.</i></p>
+            <br>
+            <p><b>In order to determine an enjoyable travel route, I chose the following parameters as my travel preferences:</b>
+                <li>Minimum temperature: 60 degrees Farenheit</li>
+                <li>Maximum temperature: 75 degrees Farenheit</li>
+                <li>Open to rainfall, but excluded any cities with snowfall</li></p>
+                <br>
+            <p><b>Here is the final map of cities that fit this criteria: </b></p>
+            <div class="figure text-center"><img class="resize text-center" src="../../assets/images/projects/weather/WeatherPy_Vacation_Map.png" alt="Map Of Cities With Desired Weather Conditions" /></div>
             <p>
-                <br> lorem ipsum etc etc
+                <br>
             </p>
+            <b>Part 3: Create a Travel Itinerary with a Corresponding Map</b>
+            <p>I chose four cities in Brazil that fit our criteria listed above. Here is the final travel itinerary:</p>
+            <div class="figure text-center"> <img class="resize text-center" src="../../assets/images/projects/weather/WeatherPy_Travel_Map.png" alt="Travel Itinerary in Brazil" />
+            </div>
+            <br><br>
+
+            <p>Here are the individual cities, as well as the hotel name and weather conditions for each city.<br><br>
+            
+                <b>Start: The Pousada Chao Earth Hotel in Santa Luzia, Brazil</b><br>
+                <div class="figure text-center"> <img class="resize text-center" src="../../assets/images/projects/weather/Start.png" alt="Start Point" /></div><br><br>
+                
+                <b>First Stop: The Chácara Sombra do Altíssimo Hotel in Santa Isabel, Brazil</b><br>
+                <div class="figure text-center"> <img class="resize text-center" src="../../assets/images/projects/weather/Stop1.png" alt="First Stop" /></div><br><br>
+                
+                <b>Second Stop: The Ilha Flat Hotel in Ilhabela, Brazil</b><br>
+                <div class="figure text-center"> <img class="resize text-center" src="../../assets/images/projects/weather/Stop2.png" alt="Second Stop" /></div><br><br>
+                
+                <b>End: The Pousada Porto Praia Hotel in Arraial Do Cabo, Brazil</b><br>
+                <div class="figure text-center"> <img class="resize text-center" src="../../assets/images/projects/weather/End.png" alt="End Point" /></div>
+                <br> 
+            </p>
+            
         </div>
     </section>
+
+    <hr width="90%"/>
 
 
     <!-- Footer -->
@@ -120,7 +140,6 @@
         <div class="container text-center">
             |&nbsp;&nbsp;&nbsp;Built by Sathvik Aithala &copy; 2020&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
-        
     </footer>
 
     <!-- References -->
