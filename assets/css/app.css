@@ -325,6 +325,18 @@ img.resize {
 
 }
 
+.table {
+  border: 0.5px solid var(--dark);
+  width:90%;
+  font-size: 0.9rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table th {
+  background-color: var(--main);
+  opacity: 0.8;
+}
 
 /* code for blog tiles: */
 .wrap
@@ -439,5 +451,6 @@ img.resize {
   .wrap {
    flex-direction: column;
    max-width:60%;
+   justify-content: center;
   }
 }
