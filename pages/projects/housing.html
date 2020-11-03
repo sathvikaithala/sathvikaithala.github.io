@@ -22,7 +22,7 @@
     <link href="../../assets/css/app.css" rel="stylesheet" />
 
     <!-- Title -->
-    <title>Projects | <!--Insert Project Name Here --> | Sathvik Aithala</title>
+    <title>Projects | Housing Prices | Sathvik Aithala</title>
     <link rel="icon" href="../../assets/images/favicon-32x32.png" type="image/png">
 </head>
 
@@ -56,9 +56,9 @@
     <header>
         <div class="splash">
             <div class="container header-container">
-                <h3 class="subtitle text-center">Enter Text</h3>
-                <h1 class="name text-center"><b>Project Name</b></h1>
-                <h3 class="subtitle text-center">Enter Text</h3>
+                <h3 class="subtitle text-center">Predicting</h3>
+                <h1 class="name text-center"><b>HOUSING PRICES</b></h1>
+                <h3 class="subtitle text-center">ETL, Machine Learning, Python, SQL, AWS, Tableau</h3>
 
             </div>
 
@@ -66,43 +66,200 @@
 
     </header>
     <br>
+    <div class="container text-center"><a href="https://github.com/sathvikaithala/final_project" target="_blank" rel="noopener noreferrer" class="btn"><i class="fab fa-github"></i> GitHub Repository</a></div>
+
     <hr width="90%"/>
 
     <!-- Writeup -->
     <section class="info-container">
         <div class="container">
-            <h2>Background & Overview</h2>
-            <p>
-                <br> Enter Text Here
-                
-            </p>
+            <h2>Project Description</h2><br>
+            <p><b>Overview:</b><br> Housing prices in the United States (US) continue to increase as incomes rise, unemployment drops, and industries grow. Our team selected this topic in order to predict how housing prices will change over the years as we decide where we want to relocate long-term.</p>
+            <p><b>Objective:</b><br> By analyzing housing market data and trends between 2015-2019, the Housing Price Prediction Tool will predict whether the housing market will rise or drop in the 50 largest cities in the US. For example, someone who works in the Technology sector will be able to compare the income, housing price, and population demographics of San Francisco, Austin, and Seattle while they are applying for jobs. This could help them better understand similarities and differences between different cities and aid their decision making process.</p>
+            <br><p><b>Background:</b> This was the final project in my Data Analytics Boot Camp. The goal of the project was to implement many of the skills we learned </p>
+            <br>
+            <hr width="90%"/>
+            
+            <h2 id="questions">Questions To Answer:</h2><br>
+            <ul>
+                <li><i>Given the data available, can we expect housing prices to increase or decrease in the coming years?</i>
+                    <ul>
+                        <li>We would use demographic, income, housing price, job industries, and rent/buy ratios in a city to help come to this prediction.</li>
+                    </ul>
+                </li><br>
+                <li><i>For a given city, which other US cities have similar housing and demographic data?</i>
+                    <ul>
+                        <li>For example, if a person is working in the tech sector and is looking for a new city to move to, they will be able to see a list of cities similar to San Francisco or Austin that may not be as obvious.</li>
+                    </ul><br>
+                </li>
+                <li><i>Given a city name, what pertinent information should be understood by someone looking to move to the area?</i>
+                    <ul>
+                        <li>Our dashboard would allow a user to see charts of demographic data, income data, housing prices, crime, and unemployment rates, and trends over time for each city.</li>
+                    </ul>
+                </li>
+            </ul>
+            
+
+                       
+        </div>
+    </section>
+
+    <hr width="90%"/>
+    
+    <!-- Presentation Embed -->
+    <div class="container" id="presentation"><h2>Presentation</h2><br></div>
+    <section class="info-container text-center">
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTR38tBfTLQl3Ds0Em2ibIXq2o3FOLolMGkI71VlIpzWMPVYiyVdxqQnr3fPZDkXw/embed?start=false&loop=false&delayms=15000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>        
+    </section>
+    
+    <br>
+    <hr width="90%"/>
+
+    <!-- Writeup Continued -->
+    <section class="info-container">
+        <div class="container">
+            <h2>Technologies &amp; Tools Used</h2><br>
+            <div class="figure text-center">  <img class="resize" src="../../assets/images/projects/housing/Technologies.png" alt="Technologies Used" /> </div>
+            
+            <br>
+            <hr width="90%"/>
+
+            <h2 id="data-exploration">Data Exploration Phase</h2><br>
+            <div class="figure text-center">  <img class="resize" src="../../assets/images/projects/housing/ETL.png" alt="ETL Process" /> </div>
+
+            <br>
+            <hr width="90%"/>
+
+            <h2>Data Analysis Phase</h2><br>
+            <p>Detailed descriptions of our data analysis can be found in our <a href="#presentation" class="link">presentation</a>.</p>
+            <p>Here are the housing price trends of New York (top) and Los Angeles (bottom), after we cleaned null values from our data. We found that the housing prices in Los Angeles to rise in a more linear and predictable fashion compared to New York, which was more sporadic.</p>
+            <div class="figure text-center">  <img class="resize" src="../../assets/images/projects/housing/LA_NY_Plot.png" alt="Los Angeles and New York" /> </div>
+            <ul>
+                <li>Looking at two cities, New York and Los Angeles, we found that housing prices have increased over the years, but not steadily for all cities.</li>
+                <li>New York’s (top graph) housing market has large increases and decreases in shorter periods of time.</li>
+                <li>Los Angeles’s (bottom graph) housing market shows small increases each year, but less decreases.</li>
+                <li>When comparing this trend to unemployment rates, Los Angeles has consistently decreased, while New York has fluctuated.</li>
+                <li>Preliminary Conclusion: Given the data for New York, it is possible some city housing markets may drop within the next few months, instead of assuming all will continue to rise.</li>
+            </ul>
+
+            <br>
+            <hr width="90%"/>
+
+            <h2 id="data-sources">Data Sources</h2><br>
+            <ul>
+                <p><a href="https://www.kaggle.com/paultimothymooney/zillow-house-price-data" target="_blank" rel="noopener noreferrer" class="link"><b>Kaggle:</b> Zillow US House Price Data</a></p>
+                <p><a href="https://www.census.gov/data/tables/time-series/demo/popest/2010s-total-cities-and-towns.html" target="_blank" rel="noopener noreferrer" class="link"><b>Census:</b> US City and Town Population Totals: 2010-2019</a></p>
+                <p><a href="https://www.bls.gov/lau/data.htm" target="_blank" rel="noopener noreferrer" class="link"><b>Bureau of Labor Statistics:</b> Unemployment Rates by City</a></p>
+                <p><a href="https://www.kaggle.com/blitzr/movehub-city-rankings" target="_blank" rel="noopener noreferrer" class="link"><b>Kaggle:</b> MoveHub City Ranking Data</a></p>
+                <p><a href="https://towardsdatascience.com/employment-growth-trends-by-industry-and-city-a-data-study-5002bf20692" target="_blank" rel="noopener noreferrer" class="link"><b>Bureau of Labor Statistics:</b> Concentrations of Industry</a></p>
+            </ul>
+
+            <br>
+            <hr width="90%"/>
+
+            <h2 id="database">Database</h2><br>
+            <ul>
+                <li>
+                    <p>For our database, we will be using PostgreSQL by use of pgAdmin and we are also hosting our raw data in an AWS S3 bucket. This enables anyone with the access codes to work the project data. The image below represents the tables of data that are uploaded onto the database in Postgres. The entity relational diagram allowed for easier joining of tables with SQL and was a helpful reference while importing data into the database. There are three main tables with data that were used to build and perform the machine learning model.</p>
+                </li>
+                <li>
+                    <p>The most common and obvious connect between all of our datasets is the State column. <div class="figure text-center"> <img class="resize" src="../../assets/images/projects/housing/ERD.png" alt="image" /></div></p>
+                </li>
+            </ul>
+            <br>
+            <hr width="90%"/>
+
+            <h2 id="machine-learning">Machine Learning</h2><br>
+            
+            <b>Preliminary Data Processing</b>
+            <ul>
+                <li>
+                    <p>The first steps were to check the kind of data types were inside of the CSV file housing our data for each city. We found that our dataset had city name, state, county and average sales price for all home types inside of that city with time steps of months from 2006 to 2020.</p>
+                </li>
+                <li>
+                    <p>The next was to check for duplicates and null values in the dataframe we created. We chose to keep the first of each of the duplicates and drop all rows (cities) that had more than 10% null values. This left a little over 17,000 cities with data from the year 2016-2020.</p>
+                </li>
+            </ul>
+            <p>After our preliminary processing, were able to perform an initial unsupervised clustering. We attained the following 3D Pricincipal Cluster Analysis Plot:</p> 
+            <div class="figure text-center">  <img class="resize" src="../../assets/images/projects/housing/ML_initial.png" alt="Initial 3D PCA" /> <br></div>
+            
+            <b>Preliminary Feature Engineering, Feature Selection, &amp; the Decision-making Process:</b>
+            <ul>
+                <li>
+                    <p>For the null values we decided to use a KNN (K-Nearest-Neighbors) imputer to fill in the values, as a simple imputer would have used the mean or median housing price. For housing data with large variances between large cities like New York and small towns, we believed that nearest-neighbor medians would not skew the data as much as the median of the whole column.</p>
+                </li>
+                <li>
+                    <p>With the 4 years of monthly time-step data for the remaining 17,000 cities, the categorical features of the state that the cities were in was ordinal-encoded, then one-hot-encoded, and finally added into the data frame to be used as a feature with the rest of the time series data. This brought the total number of columns from 177 to 224.</p>
+                </li>
+            </ul>
+            <b>Splitting Data Into Testing &amp; Training Sets</b>
+            <p>For our final linear regression model, we used an 80/20 testing/training split to achieve our results. The testing/training splits we tried in other methods are shown in the table below.</p>
+            <b>Explanation of Model Choice (Including Limitations &amp; Benefits)</b>
+            <p>Here are the models we tried, along with results we got: <div class="figure text-center"> <img class="resize" src="../../assets/images/projects/housing/ML_Trials.png" alt="ML Trials" /></p></div>
+            <p><ul>
+                <li>The Linear Regression model outperformed the closest model by 40x RMSE. Since it was the most simple solution, we tried a few other models as well to see if we could outperform it.</li>
+                <li>The second closest was random forest regression that was placed through a stochastic cross validation with a RMSE of $7650.22.</li>
+                <li>This model is over 3x more accurate than the other random forest models attempted</li>
+                <li>This includes the Gradient BoostingRegressor which is built to optimize validation error, while also stopping training trees before overfitting occurs.</li>
+            </ul></p>
+    
         </div>
     </section>
 
     <hr width="90%"/>
 
     <!-- Dashboard Embed -->
-    <div class="container"><h2>Enter Text for Images/Dashboard</h2><br></div>
-    <section class="card custom-card" id="links">
-        <div class="container text-center">
-            <br><br><h3 class="card-title">Images/Dashboard</h3><br>
+    <div class="container"><h2>Dashboard</h2><br>
+        <p>We used <em>Tableau</em> to create and host our dashboard. It will be directly tied to our Postgres database hosted on AWS via a direct connection.</p>
 
-            <!-- Copy Dashboard Embed Link Here -->
+        <div class='responsive-iframe text-center' id='db' style='position: relative'><noscript><a
+                href='https:&#47;&#47;markeiabc.github.io&#47;Housing_Data_Website&#47;'><img alt=' '
+                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ho&#47;HousingPrices_16030731374470&#47;Dashboard&#47;1_rss.png'
+                    style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='path'
+                value='views&#47;HousingPrices_16030731374470&#47;Dashboard?:language=en&amp;:embed=y&amp;:display_count=y' />
+            <param name='toolbar' value='no' />
+            <param name='static_image'
+                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ho&#47;HousingPrices_16030731374470&#47;Dashboard&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en' /></object>
+        </div>
+    </div>
     <br><br>
-    </section> <!-- end links section -->
 
     <hr width="90%"/>
 
     <!-- Writeup Continued -->
     <section class="info-container">
         <div class="container">
-            <h2>Enter Text</h2>
-            <p>
-                <br> lorem ipsum etc etc
-            </p>
+            <h2 id="results">Analysis Results</h2><br>
+            <p>After completing the the project and viewing the prediction, we can see that not all housing prices will be increasing in the next year. The machine learning model selected allowed us to get a RMSE of less than $200, which offers a strong prediction from the data provided. If we look at a city like Honolulu for example, we can determine that other factors may be an indicator of the housing market decline. The unemployment rate dropped from 2018 to 2019, but the percentage decrease was a lot smaller that in years past, which can indicate the unemployment percentage will begin to either level out or increase. This can then impact the housing market as more people are unable to purchase homes. New York shows a similar scenario. We also noticed that some cities housing prices are not increasing at such a high rate as they have done in years past. Boston for instance, is beginning to level out.</p>
+            <p>In conclusion, the data points we provided can be correlated in determining the increase or decrease of the housing market. We also believe there are many other data points we should look at the get a better picture. For example, viewing by zip code instead of city, looking at political party majority in the area, weather, etc.</p>
+
+            <br>
+            <hr width="90%"/>
+
+            <h2 id="recommendations">Recommendations For Future Analysis</h2><br>
+            <ul>
+                <li>We would explore more machine learning models and fine tune them to try and get a better fitting model.</li>
+                <li>We would try a Recurrent Neural Net model with timestamp data.</li>
+            </ul>
+
+            <br>
+            <hr width="90%"/>
+
+            <h2 id="improvements">Improvements We Would Have Made</h2><br>
+            <p>One major area where we feel we could have improved our project is by taking more time to discover more data sets and factors that may influence housing prices. There are likely many variables we could not find data on handily, and that would probably be the best place to improve our project.</p>
+        
         </div>
     </section>
-
+<br>
 
     <!-- Footer -->
     <section class="container-dark text-center" id="contact">
