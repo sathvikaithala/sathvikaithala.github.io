@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+    <!-- Custom styles for this template -->
+    <link href="../../assets/css/app.css" rel="stylesheet" />
+
+    <!-- Title -->
+    <title>Projects | Camera Reviews | Sathvik Aithala</title>
+    <link rel="icon" href="../../assets/images/favicon-32x32.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm text-uppercase" id="mainNav">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right text-uppercase text-white rounded" type="button"
+                data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../blog.html">Blog</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+
+    <!-- Header -->
+    <header>
+        <div class="splash">
+            <div class="container header-container">
+                <h3 class="subtitle text-center">Analyzing</h3>
+                <h1 class="name text-center"><b>CAMERA REVIEWS</b></h1>
+                <h3 class="subtitle text-center">Big Data, PySpark, AWS, ETL</h3>
+            </div>
+        </div>
+    </header>
+    <br>
+
+    <div class="container text-center"><a href="https://github.com/sathvikaithala/big_data" target="_blank" rel="noopener noreferrer" class="btn"><i class="fab fa-github"></i> GitHub Repository</a></div>
+
+    <br>
+    <hr width="90%"/>
+
+    <!-- Writeup -->
+    <section class="info-container">
+        <div class="container">
+            <h2>Objective</h2>
+            <p>
+                <br> This project looks at a big data set of Amazon.com reviews for cameras to determine if reviews that were part of a paid campaign were biased or trustworthy. Statistical analysis was run on the database using PySpark, and the database was loaded to an AWS RDS instance.
+
+                <br><br>The ETL process was run on the cloud, using Spark. In order to accomplish this, tables were created in an RDS database. The data was then extracted from the S3 bucket and loaded into a DataFrame, where it was transformed to fit a desired schema. To complete the ETL process, these DataFrames were loaded into the corresponding tables on the RDS instance.
+                
+                <br><br>Once the ETL process was completed, statistical analysis was run using PySpark to determine if the paid reviews were unbiased.
+                
+                <br><br><i>Follow along the <a href="#nb" class="link">Notebook</a> below to check out the analysis!</i>
+                
+            </p>
+        </div>
+    </section>
+
+    <br>
+    <hr width="90%"/>
+
+<!-- Notebook Embed -->
+    <section class="info-container">
+        <div class="container" id="nb"><h2>Notebook</h2><br></div>
+        <div class="card custom-card-nb" id="notebook"><br>
+            <iframe class="responsive-iframe-nb text-center" src="https://render.githubusercontent.com/view/ipynb?commit=9ca955eb19db9d9e999c103a039dbbe02191fc84&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f7361746876696b61697468616c612f4269675f446174612f396361393535656231396462396439653939396331303361303339646262653032313931666338342f43616d657261526576696577732e6970796e62&amp;nwo=sathvikaithala%2FBig_Data&amp;path=CameraReviews.ipynb&amp;repository_id=304391076&amp;repository_type=Repository#c36c0afa-e0e0-428d-9a8e-e400240ec0e4" frameborder="0" allowFullScreen="true">
+            Viewer requires iframe.
+            </iframe>
+        </div>
+    </section>
+
+    <hr width="90%"/>
+
+    <!-- Footer -->
+    <section class="container-dark text-center" id="contact">
+        <div class="container">
+            <h1>Contact Me&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+            <h3 class="intro subtitle">
+                <a href="https://linkedin.com/in/sathvikaithala" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/sathvikaithala" target="_blank" rel="noopener noreferrer" title="GitHub" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="mailto:<sathvik.aithala@gmail.com>" target="_blank" rel="noopener noreferrer" title="Email" class="social-icon"><i class="fas fa-envelope"></i></a>
+            </h3>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            |&nbsp;&nbsp;&nbsp;Built by Sathvik Aithala &copy; 2020&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        
+    </footer>
+
+    <!-- References -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="../../assets/js/app.js"></script>
+</body>
+
+</html>
