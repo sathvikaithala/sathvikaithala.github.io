@@ -459,21 +459,18 @@ img.resize {
   transform:translateY(0px);
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .wrap {
    flex-direction: column;
    max-width:75%;
    max-height:75%;
-   justify-content: center;
-   text-align: center;
    max-width:480px;
   }
 
   .tile {
     max-width: 75%;
     max-height: 75%;
-    justify-content: center;
-    text-align: center;
+
 
   }
 }

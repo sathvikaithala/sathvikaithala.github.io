@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+    <!-- Custom styles for this template -->
+    <link href="../../assets/css/app.css" rel="stylesheet" />
+
+    <!-- Title -->
+    <title>Projects | Car Stats | Sathvik Aithala</title>
+    <link rel="icon" href="../../assets/images/favicon-32x32.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm text-uppercase" id="mainNav">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right text-uppercase text-white rounded" type="button"
+                data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../blog.html">Blog</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+
+    <!-- Header -->
+    <header>
+        <div class="splash">
+            <div class="container header-container">
+                <h3 class="subtitle text-center">Determining</h3>
+                <h1 class="name text-center"><b>CAR STATISTICS</b></h1>
+                <h3 class="subtitle text-center">R</h3>
+            </div>
+        </div>
+    </header>
+
+    <br>
+    <div class="container text-center"><a href="https://github.com/sathvikaithala/r_analysis" target="_blank" rel="noopener noreferrer" class="btn"><i class="fab fa-github"></i> GitHub Repository</a></div>
+
+    <br>
+    <hr width="90%"/>
+
+    <!-- Writeup -->
+    <section class="info-container">
+        <div class="container">
+            <h2>Background & Overview</h2><br>
+                <p>When manufacturing a new car, it is important to determine it's fuel efficiency and other metrics, such as the suspension pressure. 
+                    <br>In order to do so, many samples of the car should be tested in various test conditions, and the results should be statistically analyzed.
+                    <br><br>In this project, I took data for a hypothetical new car, and analyzed it's fuel economy and suspension metrics using R.</p>
+
+            <br>
+            <hr width="90%">
+            
+            <h2>Description of Data</h2><br>
+                <p><b>MPG Dataset</b>
+                    <ul>
+                        <li>50 vehicles tested</li>
+                        <li>Length</li>
+                        <li>Weight</li>
+                        <li>Spoiler Angle</li>
+                        <li>Ground Clearance</li>
+                        <li>AWD or Not AWD</li>
+                        <li>Fuel Economy (MPG)</li>
+                    </ul>
+                </p>
+                <p><b>Suspension Coil Dataset</b>
+                    <ul>
+                        <li>150 vehicles tested</li>
+                        <li>Testing Lot #</li>
+                        <li>Test Results (PSI)</li>
+                    </ul>
+                </p>
+            <br>            
+            <hr width="90%">
+
+            <h2>Multiple Regression Analysis</h2><br>
+                <p>Run multiple regression analysis to determine the bearing of different variables on the fuel economy (MPG).</p><br>
+                <b>Formula:</b> 
+                <pre>Call: lm(formula = mpg ~ vehicle.length + vehicle.weight + spoiler.angle + ground.clearance, data = mpgs)</pre>
+                
+                    <b>Residuals:</b>
+                <table class="table">
+                    <tr>
+                        <th>Min</th>
+                        <th>1st Quartile</th>
+                        <th>Median</th>
+                        <th>3rd Quartile</th>
+                        <th>Max</th>
+                    </tr>
+                    <tr>
+                        <td>-21.3395</td>
+                        <td>-4.1155</td>
+                        <td>-0.2094</td>
+                        <td>6.8789</td>
+                        <td>17.2672</td>
+                    </tr>
+                </table>
+                
+                <b>Coefficients:</b> 
+                <table class="table">
+                    <tr>
+                        <th></th>
+                        <th>Estimate</th>
+                        <th>Standard Error</th>
+                        <th>T-Value</th>
+                        <th>Pr(>|t|)</th>
+                    </tr>
+                    <tr>
+                        <td>Intercept</td>
+                        <td>-1.076e+02</td>
+                        <td>15.76</td>
+                        <td>-6.823</td>
+                        <td>1.87e-08</td>
+                    </tr>
+                    <tr>
+                        <td>Vehicle Length</td>
+                        <td>6.240</td>
+                        <td>0.661</td>
+                        <td>9.441</td>
+                        <td>3.05e-12</td>
+                    </tr>
+                    <tr>
+                        <td>Vehicle Weight</td>
+                        <td>1.277e-03</td>
+                        <td>6.948e-04</td>
+                        <td>1.937</td>
+                        <td>0.0728</td>
+                    </tr>
+                    <tr>
+                        <td>Spoiler Angle</td>
+                        <td>8.031e-02</td>
+                        <td>6.656e-02</td>
+                        <td>1.207</td>
+                        <td>0.2339</td>
+                    </tr>
+                    <tr>
+                        <td>Ground Clearance</td>
+                        <td>3.659</td>
+                        <td>0.054</td>
+                        <td>6.784</td>
+                        <td>2.13e-08</td>
+                    </tr>
+                </table>
+
+                <ul>
+                    <li>Residual standard error: 8.853 on 45 degrees of freedom</li>
+                    <li>Multiple R-squared: 0.7032</li>
+                    <li>Adjusted R-squared: 0.6768</li>
+                    <li>F-statistic: 26.65 on 4 and 45 DF</li>
+                    <li>p-value: 2.277e-11</li>
+                </ul>
+
+            </p>
+            <br>
+            <b>Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?</b>
+                <ul>
+                    <li>We found that vehicle weight and ground clearance are the two variables in our dataset that had a non-random affect on mpg. We determined this by looking at the p-values, both of which are far below our significance level of 0.05.</li>
+                </ul>
+                <b>Is the slope of the linear model considered to be zero? Why or why not?</b>
+                <ul>
+                    <li>The slope of the linear model is not zero, since there is a positive correlation due to the variance of the residuals is greater than 0.</li>
+                </ul>
+                <b>Does this linear model predict mpg of the prototypes effectively? Why or why not?</b>
+                <ul>
+                    <li>While this model does an okay job of predicting fuel efficiencty, it is only accurate around 70% of the time (Multiple R^2 = 0.7032). Therefore, it is a functional model, but should be taken with a grain of salt to account for the 30% of the time it is not accurate.</li>
+                </ul>
+
+            <br>
+            <hr width="90%"/>
+
+            <h2>Suspension Coil Summary</h2><br>
+                <b>Summary Statistics Table for Suspension (PSI)</b><br><br>
+                    <table class="table">
+                        <tr>
+                            <th>Min</th>
+                            <th>1st Quartile</th>
+                            <th>Median</th>
+                            <th>Mean</th>
+                            <th>3rd Quartile</th>
+                            <th>Max</th>
+                        </tr>
+                        <tr>
+                            <td>1463</td>
+                            <td>1497</td>
+                            <td>1500</td>
+                            <td>1500</td>
+                            <td>1501</td>
+                            <td>1536</td>
+                        </tr>
+                    </table>
+            <br>
+
+            <b>The design specifications for the suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per inch. Does the current manufacturing data meet this design specification? Why or why not?</b><br>
+                <ul>
+                    <li>The car meets suspension coil variance specifications of 100PSI, since the minimum PSI is 1463 and the max is 1536. 1536 - 1463 = 73 PSI, which is within spec.</li>
+                </ul>
+
+            <br>
+            <hr width=" 90%"/>
+
+            <h2>Suspension Coil T-Test</h2><br>
+                <b>Using the same suspension coil data, determine if the suspension coil’s pound-per-inch results are statistically different from the mean population results of 1,500 pounds per inch.</b>
+                <br><br>
+                <p>Results of our one-sample t-test on the suspension coil data:</p>
+                <p>
+                    <ul>
+                        <li>t = -0.65784</li>
+                        <li>df = 149</li>
+                        <li>p-value = 0.5117</li>
+                        <li>alternative hypothesis: true mean is not equal to 1500</li>
+                        <li>95 percent confidence interval: [1498.122, 1500.940]</li>
+                        <li>sample estimates: mean of x = 1499.531</li>
+                    </ul>
+                </p>
+                <p>We see that the mean result of the one-sample t-test is 1499.53, with a p-value of 0.51. <br><br>
+                    <i>Therefore, the mean pressure rating for the suspension coil is not statistically different from the mean population results.</i></p>
+            
+            <br>
+            <hr width="90%"/>
+
+            <h2>Suggestions For Additional Analysis</h2><br>
+                <p>I believe a potential consumer of the car would like to see the driving range of this new car compared to that of it's competition. This metric is important because it has an impact on the amount of time a consumer spends at the gas station, and how often they have to refill. While fuel economy is important, driving range is also important because a car that gets great fuel economy that has a very small tank might be more tedious to own than a less economical car that can go weeks without needing a refill.</p>
+                <p>In order to determine this, you would need both fuel tank size (in gallons) and fuel economy (in mpg). By multiplying these two, you would get the range. You would need this information for a multitude of cars, each tested many, many times in order to get a good baseline.</p>
+                <ul>
+                    <p>The null hypothesis for this study would be that there is no significant, non-random difference between our car's driving range and that of the competition's offerings.</p>
+                    <p>The alternate hypothesis would be that there is a significant difference between our car and it's competitors when it comes to driving range.</p>
+                </ul>
+                <i>A two-sample t-test would be appropriate for this experiment.</i>
+        </div>
+    </section>
+
+    <hr width="90%"/>
+
+    <!-- Footer -->
+    <section class="container-dark text-center" id="contact">
+        <div class="container">
+            <h1>Contact Me&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+            <h3 class="intro subtitle">
+                <a href="https://linkedin.com/in/sathvikaithala" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/sathvikaithala" target="_blank" rel="noopener noreferrer" title="GitHub" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="mailto:<sathvik.aithala@gmail.com>" target="_blank" rel="noopener noreferrer" title="Email" class="social-icon"><i class="fas fa-envelope"></i></a>
+            </h3>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            |&nbsp;&nbsp;&nbsp;Built by Sathvik Aithala &copy; 2020&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+    </footer>
+
+    <!-- References -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="../../assets/js/app.js"></script>
+</body>
+
+</html>
