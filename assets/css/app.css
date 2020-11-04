@@ -409,6 +409,7 @@ img.resize {
   padding:30px;
   height:calc(100% - 60px);
   font-size: 0.9rem;
+  color:white;
 }
 .tile h1
 {
