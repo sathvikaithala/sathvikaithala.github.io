@@ -98,11 +98,20 @@
     <!-- Writeup Continued -->
     <section class="info-container">
         <div class="container">
-            <h2>Conclusions</h2>
-            <p><br> Through the ETL process, the dataset was reduced from over 400,000 listings to 227,475 (-46%). This removed some outliers, null values, and listings with messy inputs. </p>
-            <p>In the end, the dataset was loaded into a SQLite database. The database has 3 tables -- one with the 227 thousand cleaned listings, and the other two with the original number of listings. The listings table houses most of the relevant information we expect to use.</p>
-            <p>The location table includes all the location information for these listings, and the description table simply holds the description for each of the listings.</p>
-            <p><br>The primary key that links these three tables is the ID column.</p>
+            <h2>Summary</h2>
+            <p><br> Through the ETL process, the dataset was reduced from 423,857 listings to 137,212 (-68%%). This removed some outliers, null values, and listings with messy inputs. </p>
+            <p>In the end, the dataset was loaded into a SQLite database. The database has 2 tables -- one with the 137,212 cleaned listings, and the other with the original number of locations. The listings table houses most of the relevant information we expect to use.</p>
+            <p>The location table includes all the location information for these listings.</p>
+
+            <p>Here is a Sankey chart depicting the pruning process we went through with the data:</p>
+            <br>
+            <div class="figure text-center"> <img class="resize" src="../../assets/images/projects/craigslist/sankey.png" alt="Sankey Chart depicting the data transformation process." /></div>
+            <br><br>
+            <p>The primary key that links these tables is the ID column:</p>
+            <br>
+            <div class="figure text-center"> <img class="resize" src="../../assets/images/projects/craigslist/db.png" alt="Database diagram." /></div>
+
+            <p><br></p>
             
             <p><br><br>In the next part of this project, I will be using this database to create a dashboard to visualize the data.</p>
         </div>
